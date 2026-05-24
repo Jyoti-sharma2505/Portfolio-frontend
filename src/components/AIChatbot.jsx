@@ -39,11 +39,11 @@ const AIChatbot = () => {
         // Mock AI response - will be replaced with actual API call
         setTimeout(() => {
             const responses = [
-                "Alex is a highly skilled Full Stack Developer with expertise in React, Node.js, and AI integration. He has 5+ years of experience building scalable applications.",
-                "Alex has worked on various impressive projects including AI Content Generator, Smart Task Manager, and Analytics Dashboard. Each project showcases his expertise in both frontend and backend development.",
-                "His technical skills span across Frontend (React, Next.js, TypeScript), Backend (Node.js, Python, FastAPI), AI/ML (OpenAI, LangChain, TensorFlow), and DevOps (Docker, AWS, Kubernetes).",
-                "Alex is currently working as a Senior Full Stack Developer at TechCorp Inc., where he leads the development of AI-powered enterprise solutions serving 100K+ users.",
-                "You can reach Alex via email at alex.richardson@example.com or connect on LinkedIn, GitHub, or Twitter. He's always open to discussing new opportunities and projects!"
+                "Jyoti is a highly skilled Full Stack Developer with expertise in React, Node.js, and AI integration. He has 4+ years of experience building scalable applications.",
+                "Jyoti has worked on various impressive projects including AI Content Generator, Smart Task Manager, and Analytics Dashboard. Each project showcases his expertise in both frontend and backend development.",
+                "His technical skills span across Frontend (React,Redux,Javascript,TailwindCss), Backend (Node.js, Express.js ,MongoDb), AI/ML (OpenAI,GerminiApi), and DevOps (AWS, Jira, Git, Github).",
+                "Jyoti is currently working as a Senior Full Stack Developer at Tech Diamond., where he leads the development of AI-powered enterprise solutions serving 100K+ users.",
+                "You can reach Jyoti via email at jyo.sharma2505@gmail.com or connect on LinkedIn, GitHub, or Twitter. He's always open to discussing new opportunities and projects!"
             ];
 
             const randomResponse = responses[Math.floor(Math.random() * responses.length)];
