@@ -54,10 +54,13 @@ function App() {
           console.warn("Failed to fetch experience, using mock fallback", e);
         }
 
-        const personal = (portfolio && portfolio.personal) || portfolioData.personal;
-        const finalSkills = (skillsData && skillsData.length > 0) ? skillsData : portfolioData.skills;
-        const finalProjects = (projectsData && projectsData.length > 0) ? projectsData : portfolioData.projects;
-        const finalExperience = (experienceData && experienceData.length > 0) ? experienceData : portfolioData.experience;
+        const personal = portfolio?.personal || {};
+
+        const finalSkills = skillsData || [];
+
+        const finalProjects = projectsData || [];
+
+        const finalExperience = experienceData || [];
 
         setPortfolioDataState(personal);
         setSkills(finalSkills);
