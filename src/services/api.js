@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { portfolioData } from '../mock';
 
 const BACKEND_URL =
   import.meta.env.VITE_API_URL ||
@@ -14,7 +13,7 @@ export const getPortfolioData = async () => {
     return response.data;
   } catch (error) {
     console.warn('API error fetching portfolio, falling back to mock data:', error);
-    return { personal: portfolioData.personal };
+    throw error;
   }
 };
 
@@ -35,7 +34,7 @@ export const getSkills = async () => {
     return response.data;
   } catch (error) {
     console.warn('API error fetching skills, falling back to mock data:', error);
-    return portfolioData.skills;
+    throw error;
   }
 };
 
@@ -77,7 +76,7 @@ export const getProjects = async (featured = null) => {
     return response.data;
   } catch (error) {
     console.warn('API error fetching projects, falling back to mock data:', error);
-    return portfolioData.projects;
+    throw error;
   }
 };
 
@@ -87,7 +86,7 @@ export const getProject = async (id) => {
     return response.data;
   } catch (error) {
     console.warn('API error fetching project, falling back to mock data:', error);
-    return portfolioData.projects.find(p => p.id === parseInt(id)) || null;
+    throw error;
   }
 };
 
@@ -128,7 +127,7 @@ export const getExperience = async () => {
     return response.data;
   } catch (error) {
     console.warn('API error fetching experience, falling back to mock data:', error);
-    return portfolioData.experience;
+    throw error;
   }
 };
 

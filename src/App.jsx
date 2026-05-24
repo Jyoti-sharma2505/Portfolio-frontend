@@ -10,7 +10,6 @@ import AIChatbot from './components/AIChatbot';
 import Footer from './components/Footer';
 import { Toaster } from './components/ui/sonner';
 import { getPortfolioData, getSkills, getProjects, getExperience } from './services/api';
-import { portfolioData } from './mock';
 
 function App() {
   const [loading, setLoading] = useState(true);
